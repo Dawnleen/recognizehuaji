@@ -1,23 +1,9 @@
 
 # _*_ coding:utf-8 _*_
 
-# 
-
 # 安装imutils和opencv-contrib-python
 
- 
-
 # USAGE
-
-# python opencv_object_tracking.py
-
-# python opencv_object_tracking.py --video dashcam_boston.mp4 --tracker csrt
-
-# python opencv_object_tracking.py --video C:\Users\yaked19\Desktop\opencv-object-tracking\race.mp4 --tracker csrt
-
- 
-
-# Help
 
 # Select a ROI and then press SPACE or ENTER button!
 
@@ -174,6 +160,7 @@ while True:
     # resize the frame (so we can process it faster) and grab the
 
     # frame dimensions
+    #初始化
 
     frame = imutils.resize(frame, width=500)
 
@@ -248,14 +235,15 @@ while True:
 
 
     # if the 's' key is selected, we are going to "select" a bounding
-
     # box to track
+    #按下s键开始框选需要识别的区域
 
     if key == ord("s"):
 
         # select the bounding box of the object we want to track (make
 
         # sure you press ENTER or SPACE after selecting the ROI)
+        #按下enter键后
 
         initBB = cv2.selectROI("Frame", frame, fromCenter=False,
 

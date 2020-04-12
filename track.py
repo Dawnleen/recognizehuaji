@@ -28,6 +28,7 @@ import cv2
  
 
 # construct the argument parser and parse the arguments
+# 构造参数解析器并分析参数
 
 ap = argparse.ArgumentParser()
 
@@ -45,8 +46,8 @@ args = vars(ap.parse_args())
  
 
 # extract the OpenCV version info
-
-# My opencv：4.1.0
+# 获取版本信息
+# My opencv：4.2.0
 
 (major, minor) = cv2.__version__.split(".")[:2]
 

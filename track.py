@@ -5,6 +5,13 @@
 
 # USAGE
 
+
+# python opencv_object_tracking.py
+
+# python track_TLD.py --video file.mp4 --tracker csrt
+
+# python track_TLD.py --video file.mp4 --tracker csrt
+
 # Select a ROI and then press SPACE or ENTER button!
 
 # Cancel the selection process by pressing c button
